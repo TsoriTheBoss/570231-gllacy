@@ -67,19 +67,16 @@
             <div class="header__item">
                 <div class="header__search">
                     <img class="header__login-picture" src="img/loop.svg" alt="Поиск">
-                    <div class="dropped__search" style="display: none">
-                        <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru">
-                            <label for="header__search-field"></label>
-                            <input id="header__search-field" type="text" name="header__search-field" value="" placeholder="Что ищем?">
-                            <button class="header__search-btn" style="display: none"></button>
-                        </form>
-                    </div>
+                    <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru" style="display: none">
+                        <label for="header__search-field"></label>
+                        <input id="header__search-field" type="text" name="header__search-field" value="" placeholder="Что ищем?">
+                        <button class="header__search-btn" style="display: none"></button>
+                    </form>
                 </div>
                 <div class="header__login">
                     <img class="header__login-picture" src="img/entrance.svg" alt="Вход">
                     <p class="header__login-description">Вход</p>
-                    <div class="dropped__login" style="display: none">
-                        <form class="header__login-dropped" method="post" action="https://echo.htmlacademy.ru">
+                        <form class="header__login-dropped" method="post" action="https://echo.htmlacademy.ru" style="display: none">
                             <label for="header__login-email-field"></label>
                             <input id="header__login-email-field" type="email" name="header__login-email-field" value="" placeholder="Электронная почта">
                             <label for="header__login-password-field"></label>
@@ -92,7 +89,6 @@
                                 <a class="header__login-link" href="#">Новая регистрация</a>
                             </div>
                         </form>
-                    </div>
                 </div>
                 <div class="header__basket">
                     <a class="header__basket-link" href="#">
@@ -334,29 +330,19 @@
 
         <footer class="footer">
             <div class="footer__social">
-                <a class="footer-social-links" href="#">
-                    <img class="footer-social-picture" src="img/twitter.png" alt="Twitter">
-                </a>
-                <a class="footer-social-links" href="#">
-                    <img class="footer-social-picture" src="img/instagram.png" alt="Instagram">
-                </a>
-                <a class="footer-social-links" href="#">
-                    <img class="footer-social-picture" src="img/facebook.png" alt="Facebook">
-                </a>
-                <a class="footer-social-links" href="#">
-                    <img class="footer-social-picture" src="img/vk.png" alt="В Контакте">
-                </a>
+                <a class="footer__social-link" href="#" target="_blank"></a>
+                <a class="footer__social-link" href="#" target="_blank"></a>
+                <a class="footer__social-link" href="#" target="_blank"></a>
+                <a class="footer__social-link" href="#" target="_blank"></a>
             </div>
             <div class="footer__production-info">
-                <a class="footer__production-info-links" href="#">Для поставщиков</a>
-                <a class="footer__production-info-links" href="#">О производстве</a>
-                <a class="footer__production-info-links" href="#">Наши документы</a>
-                <a class="footer__production-info-links" href="#">Экологические стандарты</a>
+                <a class="footer__production-info-link" href="#">Для поставщиков</a>
+                <a class="footer__production-info-link" href="#">О производстве</a>
+                <a class="footer__production-info-link" href="#">Наши документы</a>
+                <a class="footer__production-info-link" href="#">Экологические стандарты</a>
             </div>
             <div class="footer__copyright">
-                <a class="footer__copyright-picture" href="#">
-                    <img src="img/htmacademy-logo.png" alt="HTML Academy">
-                </a>
+                <a class="footer__copyright-picture" href="#"></a>
                 <p class="footer__copyright-description">Сделано в <a class="footer__production-info-links" href="#">HTML Academy</a> © 2017</p>
             </div>
         </footer>
