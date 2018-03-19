@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -14,8 +14,8 @@
         <header class="header">
 
             <div class="header__item">
-                <a class="header__logo">
-                    <img src="img/index-logo.svg" alt="Глейси">
+                <a class="header__logo-link">
+                    <img src="img/index-logo.svg" alt="Глейси" width="154" height="64">
                 </a>
                 <nav class="header__navigation">
                     <ul class="header__navigation-items">
@@ -23,35 +23,33 @@
                             <a class="header__navigation-link" href="#">
                                 Каталог
                             </a>
-                            <div class="dropped__catalog" style="display: none">
-                                <ul class="header__navigation-dropped">
-                                    <li class="header__navigation-dropped-links">
-                                        <a class="header__navigation-dropped-link-new" href="#">
-                                            Новинки
-                                        </a>
-                                    </li>
-                                    <li class="header__navigation-dropped-links">
-                                        <a class="header__navigation-dropped-link" href="#">
-                                            Сливочное
-                                        </a>
-                                    </li>
-                                    <li class="header__navigation-dropped-links">
-                                        <a class="header__navigation-dropped-link" href="#">
-                                            Щербеты
-                                        </a>
-                                    </li>
-                                    <li class="header__navigation-dropped-links">
-                                        <a class="header__navigation-dropped-link" href="#">
-                                            Фруктовый лед
-                                        </a>
-                                    </li>
-                                    <li class="header__navigation-dropped-links">
-                                        <a class="header__navigation-dropped-link" href="#">
-                                            Мелорин
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <ul class="header__navigation-dropped" style="display: none">
+                                <li class="header__navigation-dropped-links">
+                                    <a class="header__navigation-dropped-link-new" href="#">
+                                        Новинки
+                                    </a>
+                                </li>
+                                <li class="header__navigation-dropped-links">
+                                    <a class="header__navigation-dropped-link" href="#">
+                                        Сливочное
+                                    </a>
+                                </li>
+                                <li class="header__navigation-dropped-links">
+                                    <a class="header__navigation-dropped-link" href="#">
+                                        Щербеты
+                                    </a>
+                                </li>
+                                <li class="header__navigation-dropped-links">
+                                    <a class="header__navigation-dropped-link" href="#">
+                                        Фруктовый лед
+                                    </a>
+                                </li>
+                                <li class="header__navigation-dropped-links">
+                                    <a class="header__navigation-dropped-link" href="#">
+                                        Мелорин
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="header__navigation-item">
                             <a class="header__navigation-link" href="#">
@@ -69,7 +67,7 @@
 
             <div class="header__item">
                 <div class="header__search">
-                    <img class="header__login-picture" src="img/loop.svg" alt="Поиск">
+                    <img class="header__search-picture" src="img/loop.svg" alt="Поиск">
                     <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru" style="display: none">
                         <label for="header__search-field"></label>
                         <input id="header__search-field" type="text" name="header__search-field" value="" placeholder="Что ищем?">
@@ -108,8 +106,8 @@
                     </div>
                 </div>
                 <div class="header__item-mode">
-                    <p class="header__item-work-time">C 10 до 20, ежедневно</p>
-                    <a class="header__item-phone" href="tel:88124502525">8 812 450-25-25</a>
+                    <p class="header__item-mode-time">C 10 до 20, ежедневно</p>
+                    <a class="header__item-mode-phone" href="tel:88124502525">8 812 450-25-25</a>
                 </div>
             </div>
 
