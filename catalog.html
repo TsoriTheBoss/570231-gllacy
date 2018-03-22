@@ -13,58 +13,58 @@
         <h1 class="visually-hidden">Магазин мороженого</h1>
         <header class="header">
             <div class="header__item">
-                <a class="header__logo-link">
+                <a class="header__logo-link" href="index.html">
                     <img src="img/index-logo.svg" alt="Глейси" width="154" height="64">
                 </a>
                 <nav class="header__navigation">
-                    <ul class="header__navigation-items">
-                        <li class="header__navigation-item">
-                            <a class="header__navigation-link" href="#">
-                                Каталог
-                            </a>
-                            <ul class="header__navigation-dropped" style="display: none">
-                                <li class="header__navigation-dropped-links">
-                                    <a class="header__navigation-dropped-link-new" href="#">
-                                        Новинки
-                                    </a>
-                                </li>
-                                <li class="header__navigation-dropped-links">
-                                    <a class="header__navigation-dropped-link" href="#">
-                                        Сливочное
-                                    </a>
-                                </li>
-                                <li class="header__navigation-dropped-links">
-                                    <a class="header__navigation-dropped-link" href="#">
-                                        Щербеты
-                                    </a>
-                                </li>
-                                <li class="header__navigation-dropped-links">
-                                    <a class="header__navigation-dropped-link" href="#">
-                                        Фруктовый лед
-                                    </a>
-                                </li>
-                                <li class="header__navigation-dropped-links">
-                                    <a class="header__navigation-dropped-link" href="#">
-                                        Мелорин
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__navigation-item">
-                            <a class="header__navigation-link" href="#">
-                                Доставка и оплата
-                            </a>
-                        </li>
-                        <li class="header__navigation-item">
-                            <a class="header__navigation-link" href="#">
-                                О компании
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="header__item">
+                <ul class="header__navigation-items">
+                    <li class="header__navigation-item">
+                        <a class="header__navigation-link" href="#">
+                             Каталог
+                        </a>
+                        <ul class="header__navigation-dropped" style="display: none">
+                            <li class="header__navigation-dropped-links">
+                                <a class="header__navigation-dropped-link-new" href="#">
+                                    Новинки
+                                </a>
+                            </li>
+                            <li class="header__navigation-dropped-links">
+                                <a class="header__navigation-dropped-link" href="#">
+                                    Сливочное
+                                </a>
+                            </li>
+                            <li class="header__navigation-dropped-links">
+                                <a class="header__navigation-dropped-link" href="#">
+                                    Щербеты
+                                </a>
+                            </li>
+                            <li class="header__navigation-dropped-links">
+                                <a class="header__navigation-dropped-link" href="#">
+                                    Фруктовый лед
+                                </a>
+                            </li>
+                            <li class="header__navigation-dropped-links">
+                                <a class="header__navigation-dropped-link" href="#">
+                                    Мелорин
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a class="header__navigation-link" href="#">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a class="header__navigation-link" href="#">
+                            О компании
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__item">
+            <div class="header__item-control">
                 <div class="header__search">
                     <img class="header__search-picture" src="img/loop.svg" alt="Поиск">
                     <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru" style="display: none">
@@ -76,40 +76,39 @@
                 <div class="header__login">
                     <img class="header__login-picture" src="img/entrance.svg" alt="Вход">
                     <p class="header__login-description">Вход</p>
-                        <form class="header__login-dropped" method="post" action="https://echo.htmlacademy.ru" style="display: none">
-                            <label for="header__login-email-field"></label>
-                            <input id="header__login-email-field" type="email" name="header__login-email-field" value="" placeholder="Электронная почта">
-                            <label for="header__login-password-field"></label>
-                            <input id="header__login-password-field" type="password" name="header__login-password-field" value="" placeholder="Пароль">
-                            <button class="header__login-btn">
-                                Войти
+                    <form class="header__login-dropped" method="post" action="https://echo.htmlacademy.ru" style="display: none">
+                        <label for="header__login-email-field"></label>
+                        <input id="header__login-email-field" type="email" name="header__login-email-field" value="" placeholder="Электронная почта">
+                        <label for="header__login-password-field"></label>
+                        <input id="header__login-password-field" type="password" name="header__login-password-field" value="" placeholder="Пароль">
+                        <button class="header__login-btn">
+                            Войти
                             </button>
-                            <div class="header__login-links">
-                                <a class="header__login-link" href="#">Забыли пароль?</a>
-                                <a class="header__login-link" href="#">Новая регистрация</a>
-                            </div>
-                        </form>
+                        <div class="header__login-links">
+                            <a class="header__login-link" href="#">Забыли пароль?</a>
+                            <a class="header__login-link" href="#">Новая регистрация</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="header__basket">
-                    <a class="header__basket-link" href="#">
-                        <img class="header__login-picture" src="img/basket-empty.svg" alt="Корзина">
-                        <p class="header__login-description">Пусто</p>
+                <a class="header__basket" href="#">
+                        <img class="header__basket-picture" src="img/basket-empty.svg" alt="Корзина">
+                        <p class="header__basket-description">Пусто</p>
                     </a>
-                    <div class="dropped__basket" style="display: none">
-                        <div class="dropped__basket-item">
-                            Товар№1
-                        </div>
-                        <div class="dropped__basket-item">
-                            Товар№2
-                        </div>
+                <div class="dropped__basket" style="display: none">
+                    <div class="dropped__basket-item">
+                        Товар№1
+                    </div>
+                    <div class="dropped__basket-item">
+                        Товар№2
                     </div>
                 </div>
-                <div class="header__item-mode">
-                    <p class="header__item-mode-time">C 10 до 20, ежедневно</p>
-                    <a class="header__item-mode-phone" href="tel:88124502525">8 812 450-25-25</a>
-                </div>
             </div>
-        </header>
+            <div class="header__item-mode">
+                <p class="header__item-mode-time">C 10 до 20, ежедневно</p>
+                <a class="header__item-mode-phone" href="tel:88124502525">8 812 450-25-25</a>
+            </div>
+        </div>
+    </header>
 
         <main>
             <ul class="breadcrumbs">
