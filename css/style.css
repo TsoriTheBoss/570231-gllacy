@@ -266,6 +266,7 @@ input[type="radio"].visually-hidden {
     z-index: 1;
     margin: 0 2.3% 0 2.3%;
     height: 881px;
+    display: none;
 }
 
 .slider__input-switcher{
@@ -304,7 +305,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main__container {
-    margin: 0 2.3% 0 2.3%;
+    margin: 0 2.3% 40px 2.3%;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -366,26 +367,113 @@ input[type="radio"].visually-hidden {
     bottom: 24px;
 }
 
+.popular-items {
+    margin: 0 2.3% 0 2.3%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
 
+.popular__item {
+    width: 22.2%;
+    margin-right: 2.2%;
+    position: relative;
+    margin-bottom: 40px;
+}
 
+.popular__item:last-child {
+    margin-right: 0;
+}
 
+.popular__item-picture {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+    background-color: #849d8f;
+    margin-bottom: 14px;
+}
 
+.popular__item-picture-hit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
+.popular__item-price {
+    display: inline-block;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 900;
+    vertical-align: middle;
+    position: absolute;
+    top: 214px;
+    left: 0;
+    z-index: 1;
+}
 
+.popular__item-picture-ruble {
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
 
+.popular__item-weight {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 900;
+    vertical-align: middle;
+}
 
+.popular__item-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255,0.2);
+    }
 
+.popular__item-hover {
+    display: none;
+}
 
+.popular__item:hover > .popular__item-hover {
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    left: -13px;
+    bottom: -83px;
+    right: -13px;
+    text-align: center;
+    padding-top: 349px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.3);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    z-index: 10;
+}
 
+.popular__item-quick {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(160,32,11,.76);
+    padding: 10px 17px 10px 17px;
+    border-radius: 22px;
+    background-color: #f06240;
+    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172,16,0,.64);
 
+}
 
-
-
-
-
-
-
-
+.advantages {
+    background-image: url(../img/wafer-bg-pattern.jpg);
+}
 
 
 
