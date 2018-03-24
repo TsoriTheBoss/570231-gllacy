@@ -29,16 +29,22 @@ input[type="radio"].visually-hidden {
 }
 
 .page__wrapper {
+    position: relative;
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
 }
 
 .header {
-    margin: 0 2.3% 0 2.3%;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+    width: calc(100% - 4.6%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 3;
 }
 
 .header__item:first-child {
@@ -83,7 +89,7 @@ input[type="radio"].visually-hidden {
     color: #fff;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 900;
+    font-weight: 700;
     text-decoration: underline;
     text-decoration-color: rgba(255,255,255,0.2);
     padding: 7px 14px;
@@ -137,7 +143,7 @@ input[type="radio"].visually-hidden {
     color: #343434;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 900;
+    font-weight: 700;
     margin: 0 6px;
     padding: 12px 0 15px 21px;
     margin-bottom: 5px;
@@ -211,7 +217,7 @@ input[type="radio"].visually-hidden {
     margin-left: 8px;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .header__basket {
@@ -233,7 +239,7 @@ input[type="radio"].visually-hidden {
     margin-left: 8px;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -249,7 +255,7 @@ input[type="radio"].visually-hidden {
     margin: 0 0 4px 0;
     font-size: 14px;
     line-height: 16px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .header__item-mode-phone {
@@ -257,20 +263,21 @@ input[type="radio"].visually-hidden {
     color: #fff;
     font-size: 22px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 700;
     pointer-events: none;
 }
 
 .slider {
-    position: relative;
-    z-index: 1;
     margin: 0 2.3% 0 2.3%;
-    height: 881px;
-    display: none;
+    height: 605px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 41px;
 }
 
 .slider__input-switcher{
-    
+    display: none;
 }
 
 .slider-switcher {
@@ -278,30 +285,52 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__item {
+    display: block;
     text-align: center;
+    margin: 0 auto;
 }
 
 .slider-picture {
-    
-}
-/*Временное описание*/
-.slider-description {
-    
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
 }
 
-/*Временная кнопка*/
+.slider-description {
+    max-width: 700px;
+    font-size: 60px;
+    line-height: 60.35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
 .slider-link {
+    display: inline-block;
     background-color: #f06240;
     background-image: linear-gradient(#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
-    border-radius: 30px;
+    box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+    border-radius: 32px;
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 900;
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
     text-shadow: 2px 0 2px rgba(172,16,0,0.76);
-    padding: 11px 23px 10px 22px;
+    padding: 10px 42px 10px 40px;
+}
+
+.slider-link:hover {
+    background-color: #f58569;
+    background-image: linear-gradient(to top,#ec6f5e,#f58569);
+    box-shadow: 0 2px 2px rgba(172,16,0,1);
+}
+
+.slider-link:active {
+    background-color: #dc5539;
+    background-image: linear-gradient(to top,#e1613e,#d84732);
+    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
 }
 
 .main__container {
@@ -316,21 +345,21 @@ input[type="radio"].visually-hidden {
     min-width: 420px;
     min-height: 230px;
     border-radius: 15px;
-    position: relative;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    z-index: 2;
+    padding: 20px;
 }
 
 .promo:first-child {
     background-image: url(../img/rasberry-bgr.jpg);
+    background-repeat: no-repeat;
     background-color: #7f0c2e;
+    background-size: cover;
 }
 
 .promo:last-child {
     background-image: url(../img/chocolate-bgr.jpg);
+    background-repeat: no-repeat;
     background-color: #6c422f;
+    background-size: cover;
     margin-left: 20px;
 }
 
@@ -338,18 +367,20 @@ input[type="radio"].visually-hidden {
     color: #fff;
     font-size: 35px;
     line-height: 41px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .promo-description {
     color: #fff;
     font-size: 18px;
     line-height: 22px;
-    font-weight: 900;
+    font-weight: 700;
     padding-top: 22px;
+    margin-bottom: 45px;
 }
 
 .promo-btn {
+    display: inline-block;
     background-color: #f06240;
     background-image: linear-gradient(#f26843 0%,#e74a35 100%);
     box-shadow: 0 2px 2px rgba(172,16,0,.64);
@@ -358,13 +389,21 @@ input[type="radio"].visually-hidden {
     color: #fff;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 700;
     text-shadow: 2px 0 2px rgba(172,16,0,0.76);
     padding: 11px 23px 10px 22px;
-    margin: 0 10px 10px 0;
-    position: absolute;
-    right: 21px;
-    bottom: 24px;
+    float: right;
+}
+
+.promo-btn:hover {
+    background-color: #f58569;
+    background-image: linear-gradient(to top,#ec6f5e,#f58569);
+}
+
+.promo-btn:active {
+    background-color: #dc5539;
+    background-image: linear-gradient(to top,#e1613e,#d84732);
+    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
 }
 
 .popular-items {
@@ -391,25 +430,26 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
     background-color: #849d8f;
     margin-bottom: 14px;
+    z-index: 7;
 }
 
 .popular__item-picture-hit {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 7;
 }
 
 .popular__item-price {
     display: inline-block;
     font-size: 45px;
     line-height: 45px;
-    font-weight: 900;
+    font-weight: 700;
     vertical-align: middle;
     position: absolute;
     top: 214px;
     left: 0;
-    z-index: 1;
+    z-index: 7;
 }
 
 .popular__item-picture-ruble {
@@ -420,7 +460,7 @@ input[type="radio"].visually-hidden {
 .popular__item-weight {
     font-size: 30px;
     line-height: 30px;
-    font-weight: 900;
+    font-weight: 700;
     vertical-align: middle;
 }
 
@@ -430,10 +470,11 @@ input[type="radio"].visually-hidden {
     color: #fff;
     font-size: 16px;
     line-height: 22px;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: rgba(255,255,255,0.2);
+    z-index: 7;
     }
 
 .popular__item-hover {
@@ -452,23 +493,24 @@ input[type="radio"].visually-hidden {
     border-radius: 5px;
     background-color: rgba(255,255,255,.3);
     box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
-    z-index: 10;
+    z-index: 3;
 }
 
 .popular__item-quick {
     display: inline-block;
+    border: none;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 500;
     text-shadow: 0 2px 5px rgba(160,32,11,.76);
     padding: 10px 17px 10px 17px;
     border-radius: 22px;
     background-color: #f06240;
     background-image: linear-gradient(#f26843 0%,#e74a35 100%);
     box-shadow: 0 2px 2px rgba(172,16,0,.64);
-
+    cursor: pointer;
 }
 
 .advantages {
@@ -536,7 +578,7 @@ input[type="radio"].visually-hidden {
 
     font-size: 35px;
     line-height: 41px;
-    font-weight: 900;
+    font-weight: 700;
     margin-top: 7px;
 }
 
@@ -567,7 +609,7 @@ input[type="radio"].visually-hidden {
 
     font-size: 14px;
     line-height: 16px;
-    font-weight: 700;
+    font-weight: 500;
     margin-left: 16px;
     margin-top: -20px;
 }
@@ -584,7 +626,7 @@ input[type="radio"].visually-hidden {
     color: #fff;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .filter-form__sort option {
@@ -625,7 +667,7 @@ input[type="radio"].visually-hidden {
     text-align: left;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .filter-form__items-secondline {
@@ -654,7 +696,7 @@ input[type="radio"].visually-hidden {
     text-align: left;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .filter-form-btn {
