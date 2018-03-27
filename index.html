@@ -58,7 +58,7 @@
                         </li>
                         <li class="header__navigation-item">
                             <a class="header__navigation-link" href="#">
-                            О компании
+                            О Компании
                         </a>
                         </li>
                     </ul>
@@ -68,7 +68,7 @@
                 <div class="header__item-control">
                     <div class="header__search">
                         <img class="header__search-picture" src="img/loop.svg" alt="Поиск">
-                        <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru" style="display: none">
+                        <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru">
                             <label for="header__search-field"></label>
                             <input id="header__search-field" type="text" name="header__search-field" value="" placeholder="Что ищем?">
                             <button class="header__search-btn" style="display: none"></button>
@@ -114,8 +114,8 @@
         <main>
 
             <div class="slider">
-                <input id="first" class="slider__input-switcher" type="radio" checked>
-                <label class="slider-switcher" for="first"></label>
+                <input id="first" class="slider__input-switcher visually-hidden" type="radio" name="slider" checked>
+                <label class="slider-switcher slider-switcher--1" for="first"></label>
                 <div class="slider__item">
                     <img class="slider-picture" src="img/first-slide.png" alt="Мороженое" width="1045" height="881">
                     <p class="slider-description">Крем-брюле и пломбир с малиновым джемом</p>
@@ -124,25 +124,21 @@
                     </a>
                 </div>
 
-                <input id="second" class="slider__input-switcher" type="radio">
-                <label class="slider-switcher" for="second"></label>
+                <input id="second" class="slider__input-switcher visually-hidden" type="radio" name="slider">
+                <label class="slider-switcher slider-switcher--2" for="second"></label>
                 <div class="slider__item">
                     <img class="slider-picture" src="img/second-slide.png" alt="Мороженое" width="1045" height="881">
-                    <p class="slider-description">Крем-брюле и</p>
-                    <p class="slider-description">пломбир с малиновым</p>
-                    <p class="slider-description">джемом</p>
+                    <p class="slider-description">Шоколадный пломбир и лимонный сорбет</p>
                     <a class="slider-link" href="#">
                         Давайте оба!
                     </a>
                 </div>
 
-                <input id="third" class="slider__input-switcher" type="radio">
-                <label class="slider-switcher" for="third"></label>
+                <input id="third" class="slider__input-switcher visually-hidden" type="radio" name="slider">
+                <label class="slider-switcher slider-switcher--3" for="third"></label>
                 <div class="slider__item">
                     <img class="slider-picture" src="img/third-slide.png" alt="Мороженое" width="1045" height="881">
-                    <p class="slider-description">Крем-брюле и</p>
-                    <p class="slider-description">пломбир с малиновым</p>
-                    <p class="slider-description">джемом</p>
+                    <p class="slider-description">Пломбир с помадкой и клубничный щербет</p>
                     <a class="slider-link" href="#">
                         Давайте оба!
                     </a>
@@ -168,12 +164,14 @@
                 </div>
             </section>
 
-            <section class="popular-items">
+            <section>
                 <h2 class="visually-hidden">Популярные товары</h2>
+                <div class="popular-items">
 
                 <div class="popular__item">
-                        
+                     <div class="popular__item-picture--wrap">
                         <img class="popular__item-picture" src="img/ice-cream-1.jpg" alt="Мороженое" width="267" height="267">
+                    </div>
                         <img class="popular__item-picture-hit" src="img/popular-item-hit.png" alt="Хит" width="61" height="61">
                         <p class="popular__item-price">
                             310
@@ -194,8 +192,9 @@
                 </div>
                 
                 <div class="popular__item">
-                        
+                    <div class="popular__item-picture--wrap">
                         <img class="popular__item-picture" src="img/ice-cream-2.jpg" alt="Мороженое" width="267" height="267">
+                    </div>
                         <img class="popular__item-picture-hit" src="img/popular-item-hit.png" alt="Хит" width="61" height="61">
                         <p class="popular__item-price">
                             380
@@ -216,8 +215,9 @@
                 </div>
 
                 <div class="popular__item">
-                        
+                    <div class="popular__item-picture--wrap">
                         <img class="popular__item-picture" src="img/ice-cream-3.jpg" alt="Мороженое" width="267" height="267">
+                    </div>
                         <img class="popular__item-picture-hit" src="img/popular-item-hit.png" alt="Хит" width="61" height="61">
                         <p class="popular__item-price">
                             355
@@ -238,8 +238,9 @@
                 </div>
 
                 <div class="popular__item">
-                        
+                    <div class="popular__item-picture--wrap">
                         <img class="popular__item-picture" src="img/ice-cream-4.jpg" alt="Мороженое" width="267" height="267">
+                    </div>
                         <img class="popular__item-picture-hit" src="img/popular-item-hit.png" alt="Хит" width="61" height="61">
                         <p class="popular__item-price">
                             415
@@ -258,13 +259,14 @@
                         </button>
                     </div>
                 </div>
+                </div>
 
             </section>
 
             <section class="advantages">
                 <h2 class="visually-hidden">О компании</h2>
                 <h3 class="advantages__title">
-                    Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+                    Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
                 </h3>
                 <div class="advantages__items">
                     <div class="advantages__item">
@@ -273,16 +275,16 @@
                             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
                         </p>
                     </div>
+                                        <div class="advantages__item">
+                        <img class="advantages__item-picture" src="img/cow.png" alt="Корова" width="49" height="49">
+                        <p class="advantages__item-description">
+                            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                        </p>
+                    </div>
                     <div class="advantages__item">
                         <img class="advantages__item-picture" src="img/leaf.png" alt="Листик" width="49" height="49">
                         <p class="advantages__item-description">
                             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-                        </p>
-                    </div>
-                    <div class="advantages__item">
-                        <img class="advantages__item-picture" src="img/cow.png" alt="Корова" width="49" height="49">
-                        <p class="advantages__item-description">
-                            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
                         </p>
                     </div>
                     <div class="advantages__item">
@@ -299,15 +301,14 @@
                     <h2 class="visually-hidden">Блог</h2>
                     <p class="blog__title">Новое в нашем блоге</p>
                     <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-                    <img class="blog__picture" src="img/fruit-sherbet.jpg" alt="Фруктовый щербет" width="560" height="220">
                 </article>
                 <div class="distribution">
-                    <p class="distribution-description">
-                        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-                    </p>
                     <form class="distribution-form" method="post" action="https://echo.htmlacademy.ru">
+                        <p class="distribution-description">
+                            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+                        </p>
                         <label for="distribution-email"></label>
-                        <input id="distribution-email" type="email" name="email" value="" placeholder="Электронная почта">
+                        <input class="distribution-email" id="distribution-email" type="email" name="email" value="" placeholder="Электронная почта">
                         <button class="distribution-btn">
                             Отправить
                         </button>
@@ -316,47 +317,69 @@
             </section>
 
             <section class="contacts">
+               <div class="contacts-menu">
                 <p class="contacts-address">
-                    Адрес главного офиса<br> и офлайн-магазина:
+                    Адрес главного офиса<br>
+                    и офлайн-магазина:
                 </p>
-                <b class="contacts-address-magnified">ул. Большая Конюшенная</b>
-                <p class="contacts-address-magnified">19/8, Санкт-Петербург</p>
+                <p class="contacts-address-magnified">
+                ул. Большая Конюшенная<br>
+                19/8, Санкт-Петербург</p>
                 <p class="contacts-address">
                     Для заказов по телефону:
                 </p>
                 <a class="contacts-link" href="tel:88124502525">
                     8 812 450-25-25
-                </a>
-                <p class="contacts-address">
+                    <p class="contacts-address">
                     (с 10 до 20 ежедневно)
-                </p>
+                    </p>
+                </a>
+                
                 <a class="contacts-btn" href="#">
                     Форма обратной связи
                 </a>
+                </div>
             </section>
 
         </main>
 
         <footer class="footer">
             <div class="footer__social">
-                <a class="footer__social-link social-link" href="#" target="_blank"></a>
-                <a class="footer__social-link social-link" href="#" target="_blank"></a>
-                <a class="footer__social-link social-link" href="#" target="_blank"></a>
-                <a class="footer__social-link social-link" href="#" target="_blank"></a>
+                <a class="footer__social-link social-link__twitter" href="#" target="_blank">
+                    <span class="visually-hidden">Twitter</span>
+                </a>
+                <a class="footer__social-link social-link__instagram" href="#" target="_blank">
+                    <span class="visually-hidden">Instagram</span>
+                </a>
+                <a class="footer__social-link social-link__facebook" href="#" target="_blank">
+                    <span class="visually-hidden">Facebook</span>
+                </a>
+                <a class="footer__social-link social-link-vk" href="#" target="_blank">
+                    <span class="visually-hidden">ВКонтакте</span>
+                </a>
             </div>
             <div class="footer__production-info">
+                <a class="footer__production-info-like" href="#">
+                    <span class="visually-hidden">like</span>
+                </a>
+                <div class="footer__production-info__wrap">
                 <a class="footer__production-info-link" href="#">Для поставщиков</a>
                 <a class="footer__production-info-link" href="#">О производстве</a>
+                </div>
+                <div class="footer__production-info__wrap">
                 <a class="footer__production-info-link" href="#">Наши документы</a>
                 <a class="footer__production-info-link" href="#">Экологические стандарты</a>
+                </div>
             </div>
             <div class="footer__copyright">
-                <a class="footer__copyright-picture" href="#"></a>
-                <p class="footer__copyright-description">Сделано в <a class="footer__production-info-links" href="#">HTML Academy</a> © 2017</p>
+                <a class="footer__copyright-picture" href="https://up.htmlacademy.ru/htmlcss/20" target="_blank"></a>
+                <p class="footer__copyright-description">Сделано в 
+                <a class="footer__production-info-link" href="https://up.htmlacademy.ru/htmlcss/20" target="_blank">HTML Academy</a> 
+                © 2018</p>
             </div>
         </footer>
 
-        <div class="feedback"></div>
+        <div class="feedback" style="display: none">
         <h2 class="feedback__title">
             Мы обязательно вам ответим!
         </h2>
@@ -373,6 +396,7 @@
                         Отправить
                     </button>
             </form>
+        </div>
         </div>
     </div>
 </body>

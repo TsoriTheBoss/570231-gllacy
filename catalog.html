@@ -10,105 +10,106 @@
     </head>
 
     <body>
+       <div class="page__wrapper">
         <h1 class="visually-hidden">Магазин мороженого</h1>
         <header class="header">
             <div class="header__item">
-                <a class="header__logo-link" href="index.html">
-                    <img src="img/index-logo.svg" alt="Глейси" width="154" height="64">
-                </a>
+                <img class="header__logo-link" src="img/index-logo.svg" alt="Глейси" width="154" height="64">
                 <nav class="header__navigation">
-                <ul class="header__navigation-items">
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="#">
+                    <ul class="header__navigation-items">
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">
                              Каталог
-                        </a>
-                        <ul class="header__navigation-dropped" style="display: none">
-                            <li class="header__navigation-dropped-links">
-                                <a class="header__navigation-dropped-link-new" href="#">
-                                    Новинки
-                                </a>
-                            </li>
-                            <li class="header__navigation-dropped-links">
-                                <a class="header__navigation-dropped-link" href="#">
-                                    Сливочное
-                                </a>
-                            </li>
-                            <li class="header__navigation-dropped-links">
-                                <a class="header__navigation-dropped-link" href="#">
-                                    Щербеты
-                                </a>
-                            </li>
-                            <li class="header__navigation-dropped-links">
-                                <a class="header__navigation-dropped-link" href="#">
-                                    Фруктовый лед
-                                </a>
-                            </li>
-                            <li class="header__navigation-dropped-links">
-                                <a class="header__navigation-dropped-link" href="#">
+                            </a>
+                            <div class="header__navigation-dropped--wrap">
+                                <ul class="header__navigation-dropped">
+                                    <li>
+                                        <a class="header__navigation-dropped-link--title" href="#">
+                                    	    Новинки
+                                	    </a>
+                                    </li>
+                                    <li>
+                                        <a class="header__navigation-dropped-link" href="#">
+                                   	        Сливочное
+                                	    </a>
+                                    </li>
+                                    <li>
+                                        <a class="header__navigation-dropped-link" href="#">
+                                   	 Щербеты
+                               	 </a>
+                                    </li>
+                                    <li>
+                                        <a class="header__navigation-dropped-link" href="#">
+                                   		 Фруктовый лед
+                                	</a>
+                                    </li>
+                                    <li>
+                                        <a class="header__navigation-dropped-link" href="#">
                                     Мелорин
                                 </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="#">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">
                             Доставка и оплата
                         </a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a class="header__navigation-link" href="#">
-                            О компании
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">
+                            О Компании
                         </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__item">
-            <div class="header__item-control">
-                <div class="header__search">
-                    <img class="header__search-picture" src="img/loop.svg" alt="Поиск">
-                    <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru" style="display: none">
-                        <label for="header__search-field"></label>
-                        <input id="header__search-field" type="text" name="header__search-field" value="" placeholder="Что ищем?">
-                        <button class="header__search-btn" style="display: none"></button>
-                    </form>
-                </div>
-                <div class="header__login">
-                    <img class="header__login-picture" src="img/entrance.svg" alt="Вход">
-                    <p class="header__login-description">Вход</p>
-                    <form class="header__login-dropped" method="post" action="https://echo.htmlacademy.ru" style="display: none">
-                        <label for="header__login-email-field"></label>
-                        <input id="header__login-email-field" type="email" name="header__login-email-field" value="" placeholder="Электронная почта">
-                        <label for="header__login-password-field"></label>
-                        <input id="header__login-password-field" type="password" name="header__login-password-field" value="" placeholder="Пароль">
-                        <button class="header__login-btn">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__item">
+                <div class="header__item-control">
+                    <div class="header__search">
+                        <img class="header__search-picture" src="img/loop.svg" alt="Поиск">
+                        <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru">
+                            <label for="header__search-field"></label>
+                            <input id="header__search-field" type="text" name="header__search-field" value="" placeholder="Что ищем?">
+                            <button class="header__search-btn" style="display: none"></button>
+                        </form>
+                    </div>
+                    <div class="header__login">
+                        <img class="header__login-picture" src="img/entrance.svg" alt="Вход">
+                        <p class="header__login-description">Вход</p>
+                        <form class="header__login-dropped" method="post" action="https://echo.htmlacademy.ru" style="display: none">
+                            <label for="header__login-email-field"></label>
+                            <input id="header__login-email-field" type="email" name="header__login-email-field" value="" placeholder="Электронная почта">
+                            <label for="header__login-password-field"></label>
+                            <input id="header__login-password-field" type="password" name="header__login-password-field" value="" placeholder="Пароль">
+                            <button class="header__login-btn">
                             Войти
                             </button>
-                        <div class="header__login-links">
-                            <a class="header__login-link" href="#">Забыли пароль?</a>
-                            <a class="header__login-link" href="#">Новая регистрация</a>
-                        </div>
-                    </form>
-                </div>
-                <a class="header__basket" href="#">
+                            <div class="header__login-links">
+                                <a class="header__login-link" href="#">Забыли пароль?</a>
+                                <a class="header__login-link" href="#">Новая регистрация</a>
+                            </div>
+                        </form>
+                    </div>
+                    <a class="header__basket" href="#">
                         <img class="header__basket-picture" src="img/basket-empty.svg" alt="Корзина">
                         <p class="header__basket-description">Пусто</p>
                     </a>
-                <div class="dropped__basket" style="display: none">
-                    <div class="dropped__basket-item">
-                        Товар№1
-                    </div>
-                    <div class="dropped__basket-item">
-                        Товар№2
+                    <div class="dropped__basket" style="display: none">
+                        <div class="dropped__basket-item">
+                            Товар№1
+                        </div>
+                        <div class="dropped__basket-item">
+                            Товар№2
+                        </div>
                     </div>
                 </div>
+                <div class="header__item-mode">
+                    <p class="header__item-mode-time">C 10 до 20, ежедневно</p>
+                    <a class="header__item-mode-phone" href="tel:88124502525">8 812 450-25-25</a>
+                </div>
             </div>
-            <div class="header__item-mode">
-                <p class="header__item-mode-time">C 10 до 20, ежедневно</p>
-                <a class="header__item-mode-phone" href="tel:88124502525">8 812 450-25-25</a>
-            </div>
-        </div>
-    </header>
+        </header>
 
         <main>
             <ul class="breadcrumbs">
@@ -229,261 +230,268 @@
                 </div>
             </form>
 
-            <section class="catalog">
-                <h3 class="visually-hidden">Найденные позиции:</h3>
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-1.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                310
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочное с апельсиновым джемом и цитрусовой стружкой
-                        </a>
+           <section>
+                <h2 class="visually-hidden">Популярные товары</h2>
+                <div class="popular-items">
+
+                <div class="popular__item">
+                     <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-1.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            310
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочное с апельсиновым джемом и цитрусовой стружкой
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-2.jpg" alt="Мороженое" width="267" height="267">
+                    </div>
+                        <p class="popular__item-price">
+                            380
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочно-кофейное с кусочками шоколада
+                    </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
 
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-2.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                380
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочно-кофейное с кусочками шоколада
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-3.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            355
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочно-клубничное с присыпкой из белого шоколада
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
 
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-3.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                355
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочно-клубничное с присыпкой из белого шоколада
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-4.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            415
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочное крем-брюле с карамельной подливкой
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-4.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                415
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочное крем-брюле с карамельной подливкой
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-5.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            325
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочное с брусничным джемом
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-5.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                325
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочное с брусничным джемом
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-6.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            410
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочно-черничное с цельными ягодами черники
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-6.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                410
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочно-черничное с цельными ягодами черники
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-7.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            375
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочно-лимонное с карамельной присыпкой
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-7.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                375
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочно-лимонное с карамельной присыпкой
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-8.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            320
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочное с шоколадной стружкой
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-8.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                320
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочное с шоколадной стружкой
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-9.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            440
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочно-ванильное с кусочками шоколада
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-9.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                440
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочно-ванильное с кусочками шоколада
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-10.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            435
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочноe с ментоловым сиропом
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-10.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                435
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочноe с ментоловым сиропом
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-11.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            355
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочное с кусочками черного шоколада
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-11.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                355
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочное с кусочками черного шоколада
-                        </a>
+                <div class="popular__item">
+                    <div class="popular__item-picture--wrap">
+                        <img class="popular__item-picture" src="img/ice-cream-12.jpg" alt="Мороженое" width="267" height="267">
                     </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
+                        <p class="popular__item-price">
+                            420
+                            <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р" width="31" height="36">
+                            <span class="popular__item-weight">
+                                /кг
+                            </span>
+                        </p>
+                    
+                    <a class="popular__item-link" href="#">
+                        Сливочное с мятным сиропом
                     </a>
+                    <div class="popular__item-hover">
+                        <button class="popular__item-quick">
+                            Быстрый просмотр
+                        </button>
+                    </div>
                 </div>
-
-                <div class="catalog__prewiev">
-                    <div class="popular__item">
-                        <div class="popular__item-box">
-                            <img class="popular__item-picture" src="img/ice-cream-12.jpg" alt="Мороженое">
-                            <p class="popular__item-price">
-                                420
-                                <img class="popular__item-picture-ruble" src="img/ruble.png" alt="Р">
-                                <span class="popular__item-weight">
-                                    /кг
-                                </span>
-                            </p>
-                        </div>
-                        <a class="popular__item-description" href="#">
-                            Сливочное с мятным сиропом
-                        </a>
-                    </div>
-                    <a class="popular__item-btn" href="#">
-                        Быстрый просмотр
-                    </a>
                 </div>
             </section>
-
+ 
             <div class="paginator">
                 <a class="paginator__arrow-left" href=""></a>
                 <a class="paginator__page-link" href="#">1</a>
@@ -497,22 +505,39 @@
 
         <footer class="footer">
             <div class="footer__social">
-                <a class="footer__social-link social-link" href="#" target="_blank"></a>
-                <a class="footer__social-link social-link" href="#" target="_blank"></a>
-                <a class="footer__social-link social-link" href="#" target="_blank"></a>
-                <a class="footer__social-link social-link" href="#" target="_blank"></a>
+                <a class="footer__social-link social-link__twitter" href="#" target="_blank">
+                    <span class="visually-hidden">Twitter</span>
+                </a>
+                <a class="footer__social-link social-link__instagram" href="#" target="_blank">
+                    <span class="visually-hidden">Instagram</span>
+                </a>
+                <a class="footer__social-link social-link__facebook" href="#" target="_blank">
+                    <span class="visually-hidden">Facebook</span>
+                </a>
+                <a class="footer__social-link social-link-vk" href="#" target="_blank">
+                    <span class="visually-hidden">ВКонтакте</span>
+                </a>
             </div>
             <div class="footer__production-info">
+                <a class="footer__production-info-like" href="#">
+                    <span class="visually-hidden">like</span>
+                </a>
+                <div class="footer__production-info__wrap">
                 <a class="footer__production-info-link" href="#">Для поставщиков</a>
                 <a class="footer__production-info-link" href="#">О производстве</a>
+                </div>
+                <div class="footer__production-info__wrap">
                 <a class="footer__production-info-link" href="#">Наши документы</a>
                 <a class="footer__production-info-link" href="#">Экологические стандарты</a>
+                </div>
             </div>
             <div class="footer__copyright">
-                <a class="footer__copyright-picture" href="#"></a>
-                <p class="footer__copyright-description">Сделано в <a class="footer__production-info-links" href="#">HTML Academy</a> © 2017</p>
+                <a class="footer__copyright-picture" href="https://up.htmlacademy.ru/htmlcss/20" target="_blank"></a>
+                <p class="footer__copyright-description">Сделано в 
+                <a class="footer__production-info-link" href="https://up.htmlacademy.ru/htmlcss/20" target="_blank">HTML Academy</a> 
+                © 2018</p>
             </div>
         </footer>
-
+        </div>
     </body>
 </html>
