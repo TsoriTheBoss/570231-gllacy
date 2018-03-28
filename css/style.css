@@ -467,6 +467,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: stretch;
     justify-content: flex-start;
+
 }
 
 .popular__item {
