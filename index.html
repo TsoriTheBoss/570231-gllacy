@@ -103,11 +103,12 @@
                             Товар№2
                         </div>
                     </div>
+                    <div class="header__item-mode">
+                        <p class="header__item-mode-time">C 10 до 20, ежедневно</p>
+                        <a class="header__item-mode-phone" href="tel:88124502525">8 812 450-25-25</a>
+                    </div>
                 </div>
-                <div class="header__item-mode">
-                    <p class="header__item-mode-time">C 10 до 20, ежедневно</p>
-                    <a class="header__item-mode-phone" href="tel:88124502525">8 812 450-25-25</a>
-                </div>
+                
             </div>
         </header>
 
@@ -303,16 +304,19 @@
                     <a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
                 </article>
                 <div class="distribution">
-                    <form class="distribution-form" method="post" action="https://echo.htmlacademy.ru">
+                       <div class="distribution__wrap">
                         <p class="distribution-description">
                             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                         </p>
+                    <form class="distribution-form" method="post" action="https://echo.htmlacademy.ru">
+                        
                         <label for="distribution-email"></label>
                         <input class="distribution-email" id="distribution-email" type="email" name="email" value="" placeholder="Электронная почта">
                         <button class="distribution-btn">
                             Отправить
                         </button>
                     </form>
+                    </div>
                 </div>
             </section>
 
@@ -338,6 +342,7 @@
                 <a class="contacts-btn" href="#">
                     Форма обратной связи
                 </a>
+                
                 </div>
             </section>
 
@@ -378,13 +383,13 @@
                 © 2018</p>
             </div>
         </footer>
-
-        <div class="feedback" style="display: none">
+        
+<div class="feedback__popup">
+        <div class="feedback">
         <h2 class="feedback__title">
             Мы обязательно вам ответим!
         </h2>
-        <button class="feedback__btn-close" type="button">Закрыть</button>
-        <div class="feedback__item" style="display: none">
+        <button class="feedback__btn-close" type="button">x</button>
             <form class="feedback__form" id="feedback-form" action="https://echo.htmlacademy.ru" method="post">
                 <label for="user-name"></label>
                 <input class="feedback__form-name" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
@@ -398,6 +403,7 @@
             </form>
         </div>
         </div>
+       
     </div>
 </body>
 
