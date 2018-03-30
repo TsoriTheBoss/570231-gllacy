@@ -8,8 +8,9 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: none;
+    outline: none;
 }
-
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -136,6 +137,7 @@ input[type="radio"].visually-hidden {
     background-color: #f8f7f4;
     border-radius: 5px;
     box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    overflow: hidden;
 }
 
 .header__navigation-dropped-link--title {
@@ -190,6 +192,19 @@ input[type="radio"].visually-hidden {
 }
 
 .header__search-picture {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.header__search-picture__hover {
+    display: none;
     width: 50%;
     height: 50%;
     margin: auto;
@@ -204,21 +219,48 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-.header__search:hover > .header__search-dropped {
+.header__search:hover .header__search-picture {
+    display: none;
+}
+
+.header__search:hover .header__search-picture__hover {
+    display: block;
+}
+
+.header__search:hover .header__search-dropped {
     display: block;
     position: absolute;
     top: 100%;
     right: 0%;
-    padding-top: 4px;
-    z-index: 10;
-}
-
-.header__search-dropped input[type=text] {
+    min-width: 340px;
+    height: 85;
     padding: 20px 15px;
     background-color: #f8f7f4;
     border-radius: 5px;
     box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
-    min-width: 312px;
+    cursor: default;
+    z-index: 10;
+}
+
+.header__search-dropped__input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgb(211, 211, 210);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 12px;
+}
+
+.header__search-dropped__input:hover {
+    border: 2px solid #c7c6c5;
+    padding-left: 11px;
+}
+
+.header__search-dropped__input:focus {
+    outline-offset: -2px;
+    border: 2px solid #8fbdec;
+    padding-left: 11px;
+    font-weight: 700;
 }
 
 .header__login {
@@ -478,6 +520,10 @@ input[type="radio"].visually-hidden {
     margin-right: 2.2%;
     position: relative;
     margin-bottom: 40px;
+}
+
+.popular__item:hover {
+    z-index: 11;
 }
 
 .popular__item:nth-child(4n) {
@@ -749,12 +795,15 @@ input[type="radio"].visually-hidden {
 }
 
 .distribution-email:hover {
-    padding: 8px 14px;
     border: 2px solid #c7c6c5;
+    padding-left: 11px;
 }
 
 .distribution-email:focus {
     outline-offset: -2px;
+    border: 2px solid #8fbdec;
+    padding-left: 11px;
+    font-weight: 700;
 }
 
 .distribution-btn {
@@ -763,7 +812,7 @@ input[type="radio"].visually-hidden {
     background-image: linear-gradient(#f26843 0%,#e74a35 100%);
     box-shadow: 0 2px 2px rgba(172,16,0,.64);
     border-radius: 22px;
-    border: 0px;
+    border: none;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
@@ -898,7 +947,7 @@ input[type="radio"].visually-hidden {
     background-color: transparent;
     opacity: 0.8;
     box-shadow: inset 0 2px 2px #888888;
-    border: 0;
+    border: none;
 }
 
 .social-link__twitter {
@@ -1008,13 +1057,13 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback__popup {
-    position: absolute;
+    display: none;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #849d8f;
-    opacity: 0.7;
+    background-color: rgba(132, 157, 143, 0.7);
     z-index: 30;
 }
 
@@ -1023,13 +1072,11 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback {
-    position: fixed;
+    position: absolute;
     width: 480px;
-    
     border-radius: 5px;
-    padding: 17px 0;
+    padding: 24px;
     background-color: #f8f7f4;
-    opacity: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1042,16 +1089,16 @@ input[type="radio"].visually-hidden {
     line-height: 28px;
     font-weight: 500;
     color: #323232;
-    margin: 24px;
+    margin-bottom: 24px;
 }
 
 .feedback__btn-close {
     display: block;
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 10px;
     background-color: transparent;
-    border: 0;
+    border: none;
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
@@ -1063,8 +1110,10 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 24px;
     color: #323232;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
 }
 
 .feedback__form-name {
@@ -1076,6 +1125,18 @@ input[type="radio"].visually-hidden {
     border-radius: 5px;
 }
 
+.feedback__form-name:hover {
+    border: 2px solid #c7c6c5;
+    padding: 11px 18px;
+}
+
+.feedback__form-name:focus {
+    outline-offset: -2px;
+    border: 2px solid #8fbdec;
+    padding: 11px 18px;
+    font-weight: 700;
+}
+
 .feedback__form-email {
     width: 265px;
     border: none;
@@ -1085,18 +1146,73 @@ input[type="radio"].visually-hidden {
     border-radius: 5px;
 }
 
+.feedback__form-email:hover {
+    border: 2px solid #c7c6c5;
+    padding: 11px 18px;
+}
+
+.feedback__form-email:focus {
+    outline-offset: -2px;
+    border: 2px solid #8fbdec;
+    padding: 11px 18px;
+    font-weight: 700;
+}
+
 .feedback__form-description {
-    width: 430px;
+    width: 100%;
+    height: 155px;
     border: none;
     box-shadow: 0 0 0 1px #d3d3d2 inset;
     padding: 13px 20px;
     margin-bottom: 19px;
     border-radius: 5px;
+    resize: none;
+}
+
+.feedback__form-description:hover {
+    border: 2px solid #c7c6c5;
+    padding: 11px 18px;
+}
+
+.feedback__form-description:focus {
+    outline-offset: -2px;
+    border: 2px solid #8fbdec;
+    padding: 11px 18px;
+    font-weight: 700;
 }
 
 .feedback__form-btn {
+    display: inline-block;
+    background-color: #f06240;
+    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+    border-radius: 22px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-shadow: 2px 0 2px rgba(172,16,0,0.76);
+    padding: 10px 24px;
     align-self: flex-end;
 }
+
+.feedback__form-btn:hover {
+    background-color: #f58569;
+    background-image: linear-gradient(to top,#ec6f5e,#f58569);
+}
+
+.feedback__form-btn:active {
+    background-color: #dc5539;
+    background-image: linear-gradient(to top,#e1613e,#d84732);
+    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
+}
+
+
+
+
+
 
 
 
