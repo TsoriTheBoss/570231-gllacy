@@ -182,56 +182,43 @@ input[type="radio"].visually-hidden {
 }
 
 .header__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin-right: 10px;
-    position: relative;
     width: 32px;
     height: 32px;
     border-radius: 16px;
     background-color: rgba(225, 255, 255, 0.2);
 }
 
-.header__search-picture {
+.header__search-picture:first-child {
     display: block;
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
 }
 
-.header__search-picture__hover {
+.header__search-picture:nth-child(2) {
     display: none;
-    width: 50%;
-    height: 50%;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+}
+
+.header__search:hover {
+    background-color: #f8f7f4;
+}
+
+.header__search:hover .header__search-picture:first-child {
+    display: none;
+}
+
+.header__search:hover .header__search-picture:nth-child(2) {
+    display: block;
+}
+
+.header__search-dropped__wrap {
+    display: none;
 }
 
 .header__search-dropped {
-    display: none;
-}
-
-.header__search:hover .header__search-picture {
-    display: none;
-}
-
-.header__search:hover .header__search-picture__hover {
     display: block;
-}
-
-.header__search:hover .header__search-dropped {
-    display: block;
-    position: absolute;
-    top: 100%;
-    right: 0%;
     min-width: 340px;
     height: 85;
     padding: 20px 15px;
@@ -240,6 +227,14 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
     cursor: default;
     z-index: 10;
+}
+
+.header__search:hover .header__search-dropped__wrap {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    padding-top: 5px;
 }
 
 .header__search-dropped__input {
@@ -272,6 +267,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
 .header__login-picture {
@@ -285,8 +281,47 @@ input[type="radio"].visually-hidden {
     font-weight: 500;
 }
 
+.header__login-picture:first-child {
+    display: block;
+}
+
+.header__login-picture:nth-child(2) {
+    display: none;
+}
+
+.header__login:hover {
+    background-color: #f8f7f4;
+}
+
+.header__login:hover .header__login-picture:first-child {
+    display: none;
+}
+
+.header__login:hover .header__login-picture:nth-child(2) {
+    display: block;
+}
+
+.header__login:hover .header__login-description {
+    color: #000;
+}
+
 .header__login-dropped {
-    
+    display: none;
+}
+
+.header__login:hover .header__login-dropped {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    min-width: 340px;
+    height: 85;
+    padding: 20px 15px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    cursor: default;
+    z-index: 10;
 }
 
 .header__login-dropped__input {
@@ -304,6 +339,10 @@ input[type="radio"].visually-hidden {
 .header__login-link {
     
 }
+
+
+
+
 
 
 
@@ -332,7 +371,29 @@ input[type="radio"].visually-hidden {
     color: #fff;
 }
 
+.header__basket-picture:first-child {
+    display: block;
+}
 
+.header__basket-picture:nth-child(2) {
+    display: none;
+}
+
+.header__basket:hover {
+    background-color: #f8f7f4;
+}
+
+.header__basket:hover .header__basket-picture:first-child {
+    display: none;
+}
+
+.header__basket:hover .header__basket-picture:nth-child(2) {
+    display: block;
+}
+
+.header__basket:hover .header__basket-description {
+    color: #000;
+}
 
 .header__item-mode {
     position: absolute;
