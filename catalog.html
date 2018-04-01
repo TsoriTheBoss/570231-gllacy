@@ -14,11 +14,13 @@
         <h1 class="visually-hidden">Магазин мороженого</h1>
         <header class="header">
             <div class="header__item">
-                <img class="header__logo-link" src="img/index-logo.svg" alt="Глейси" width="154" height="64">
+                <a class="header__logo-link header__logo-link--active" href="index.html">
+                    <img  src="img/index-logo.svg" alt="Глейси" width="154" height="64">
+                </a>
                 <nav class="header__navigation">
                     <ul class="header__navigation-items">
                         <li class="header__navigation-item">
-                            <a class="header__navigation-link" href="#">
+                            <a class="header__navigation-link header__navigation-link--active" href="#">
                              Каталог
                             </a>
                             <div class="header__navigation-dropped--wrap">
@@ -29,7 +31,7 @@
                                 	    </a>
                                     </li>
                                     <li>
-                                        <a class="header__navigation-dropped-link" href="#">
+                                        <a class="header__navigation-dropped-link header__navigation-dropped-link--active" href="#">
                                    	        Сливочное
                                 	    </a>
                                     </li>
@@ -69,19 +71,19 @@
                     <div class="header__search">
                         <img class="header__search-picture" src="img/loop.svg" alt="Поиск">
                         <img class="header__search-picture" src="img/loop-black.svg" alt="Поиск">
-                        <div class="header__search-dropped__wrap">
                         <form class="header__search-dropped" method="get" action="https://echo.htmlacademy.ru">
+                           <div class="header__search-dropped__wraper">
                             <label for="header__search-field"></label>
                             <input class="header__search-dropped__input" id="header__search-field" type="text" name="header__search-field" value="" placeholder="Что ищем?">
-                            <button class="header__search-btn" style="display: none"></button>
+                            </div>
                         </form>
-                        </div>
                     </div>
                     <div class="header__login">
                         <img class="header__login-picture" src="img/entrance.svg" alt="Вход">
                         <img class="header__login-picture" src="img/entrance-black.svg" alt="Вход">
                         <p class="header__login-description">Вход</p>
                         <form class="header__login-dropped" method="post" action="https://echo.htmlacademy.ru">
+                           <div class="header__login-dropped--wrapper">
                             <label for="header__login-email-field"></label>
                             <input class="header__login-dropped__input" id="header__login-email-field" type="email" name="header__login-email-field" value="" placeholder="Электронная почта">
                             <label for="header__login-password-field"></label>
@@ -93,12 +95,14 @@
                                 <a class="header__login-link" href="#">Забыли пароль?</a>
                                 <a class="header__login-link" href="#">Новая регистрация</a>
                             </div>
+                            </div>
                         </form>
                     </div>
-                    <a class="header__basket" href="#">
+                    <a class="header__basket header__basket--active" href="#">
                         <img class="header__basket-picture" src="img/basket.svg" alt="Корзина">
                         <img class="header__basket-picture" src="img/basket-full.svg" alt="Корзина">
                         <p class="header__basket-description">Пусто</p>
+                        <p class="header__basket-description">2 товара</p>
                     </a>
                     <div class="dropped__basket" style="display: none">
                         <div class="dropped__basket-item">
@@ -138,7 +142,7 @@
           </ul>
         </div>
            <section class="catalog__filter">
-            <h3 class="visually-hidden">Отфильтровать список:</h3>
+           <h2 class="catalog__caption">Сливочное мороженое</h2>
             <form class="filter-form" id="filter-form" action="/" method="get">
               <fieldset class="filter-form__item">
                 <legend class="filter-form__title">Сортировка:</legend>
@@ -150,39 +154,40 @@
                 </select>
                 <span class="filter-form__sort-icon"></span>
               </fieldset>
-              <fieldset class="filter-form__item">
+              <fieldset class="filter-form__item filter-form__item-range">
                 <legend class="filter-form__title">
                     Цена: <span class="filter-form__price">100</span> руб. – <span class="filter-form__price">500</span> руб.
                 </legend>
                 <input class="filter-form__price-range" type="range" min="0" max="500" step="10">
+                <span class="runnable-track"></span>
                 </fieldset>
               <fieldset class="filter-form__item">
                 <legend class="filter-form__title">Жирность:</legend>
                 <ul class="filter-form__fatcontent">
                   <li class="filter-form__fatcontent-item">
                     <label class="filter-form__radio-control">
-                      <input type="radio" name="fatcontent" value="#">
+                      <input class="filter-form__radio" type="radio" name="fatcontent" value="#">
                       <span class="filter-form__radio-icon"></span>
                       <span class="filter-form__radio-label">0%</span>
                     </label>
                   </li>
                   <li class="filter-form__fatcontent-item">
                     <label class="filter-form__radio-control">
-                      <input type="radio" name="fatcontent" value="#" checked>
+                      <input class="filter-form__radio" type="radio" name="fatcontent" value="#" checked>
                       <span class="filter-form__radio-icon"></span>
                       <span class="filter-form__radio-label">до 10%</span>
                     </label>
                   </li>
                   <li class="filter-form__fatcontent-item">
                     <label class="filter-form__radio-control">
-                      <input type="radio" name="fatcontent" value="#">
+                      <input class="filter-form__radio" type="radio" name="fatcontent" value="#">
                       <span class="filter-form__radio-icon"></span>
                       <span class="filter-form__radio-label">до 30%</span>
                     </label>
                   </li>
                   <li class="filter-form__fatcontent-item">
                     <label class="filter-form__radio-control">
-                      <input type="radio" name="fatcontent" value="#">
+                      <input class="filter-form__radio" type="radio" name="fatcontent" value="#">
                       <span class="filter-form__radio-icon"></span>
                       <span class="filter-form__radio-label">выше 30%</span>
                     </label>
@@ -194,35 +199,35 @@
                 <ul class="filter-form__fillers">
                   <li class="filter-form__fillers-item">
                     <label class="filter-form__checkbox-control">
-                      <input type="checkbox" name="filler-chocolate" checked>
+                      <input class="filter-form__checkbox" type="checkbox" name="filler-chocolate" checked>
                       <span class="filter-form__checkbox-icon"></span>
                       <span class="filter-form__checkbox-label">шоколадные</span>
                     </label>
                   </li>
                   <li class="filter-form__fillers-item">
                     <label class="filter-form__checkbox-control">
-                      <input type="checkbox" name="filler-sugar" checked>
+                      <input class="filter-form__checkbox" type="checkbox" name="filler-sugar" checked>
                       <span class="filter-form__checkbox-icon"></span>
                       <span class="filter-form__checkbox-label">сахарные присыпки</span>
                     </label>
                   </li>
                   <li class="filter-form__fillers-item">
                     <label class="filter-form__checkbox-control">
-                      <input type="checkbox" name="filler-fruit">
+                      <input class="filter-form__checkbox" type="checkbox" name="filler-fruit">
                       <span class="filter-form__checkbox-icon"></span>
                       <span class="filter-form__checkbox-label">фрукты</span>
                     </label>
                   </li>
                   <li class="filter-form__fillers-item">
                     <label class="filter-form__checkbox-control">
-                      <input type="checkbox" name="filler-syrup">
+                      <input class="filter-form__checkbox" type="checkbox" name="filler-syrup">
                       <span class="filter-form__checkbox-icon"></span>
                       <span class="filter-form__checkbox-label">сиропы</span>
                     </label>
                   </li>
                   <li class="filter-form__fillers-item">
                     <label class="filter-form__checkbox-control">
-                      <input type="checkbox" name="filler-jam">
+                      <input class="filter-form__checkbox" type="checkbox" name="filler-jam">
                       <span class="filter-form__checkbox-icon"></span>
                       <span class="filter-form__checkbox-label">джемы</span>
                     </label>
@@ -496,13 +501,17 @@
             </section>
  
             <div class="paginator">
-            <a class="paginator__arrow  paginator__arrow--prev  paginator__arrow--inactive" href="">&lt;</a>
+            <a class="paginator__page-link paginator__arrow--prev paginator__page-link--disabled" href="#">
+                <img src="img/icon-arrow.svg" alt="назад" width="8" height="12">
+            </a>
             <a class="paginator__page-link  paginator__page-link--active">1</a>
-            <a class="paginator__page-link" href="#2">2</a>
-            <a class="paginator__page-link" href="#3">3</a>
-            <a class="paginator__page-link" href="#4">4</a>
-            <a class="paginator__page-link" href="#5">5</a>
-            <a class="paginator__arrow  paginator__arrow--next" href="">&gt;</a>
+            <a class="paginator__page-link" href="#">2</a>
+            <a class="paginator__page-link" href="#">3</a>
+            <a class="paginator__page-link" href="#">4</a>
+            <a class="paginator__page-link" href="#">5</a>
+            <a class="paginator__page-link paginator__arrow--next" href="#">
+                <img src="img/icon-arrow.svg" alt="вперед" width="8" height="12">
+            </a>
           </div>
         </main>
 
