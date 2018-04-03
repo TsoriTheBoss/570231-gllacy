@@ -1,7 +1,9 @@
 html {
     box-sizing: border-box;
 }
-::before, *::after {
+
+::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -40,7 +42,9 @@ input[type="radio"].visually-hidden {
     position: relative;
     margin: 0 auto;
     max-width: 1200px;
+    min-width: 941.4px;
     width: 100%;
+    overflow: hidden;
 }
 
 .header {
@@ -107,7 +111,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     font-weight: 700;
     text-decoration: underline;
-    text-decoration-color: rgba(255,255,255,0.2);
+    text-decoration-color: rgba(255, 255, 255, 0.2);
     padding: 7px 14px;
     border-radius: 16px;
     border: none;
@@ -141,7 +145,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header__navigation-item:hover > .header__navigation-dropped--wrap {
-    display:block;
+    display: block;
     position: absolute;
     top: 100%;
     left: -7px;
@@ -150,12 +154,12 @@ input[type="radio"].visually-hidden {
 }
 
 .header__navigation-dropped {
-    display:block;
+    display: block;
     list-style: none;
     min-width: 143px;
     background-color: #f8f7f4;
     border-radius: 5px;
-    box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
     overflow: hidden;
 }
 
@@ -259,7 +263,7 @@ input[type="radio"].visually-hidden {
     padding: 20px 17px;
     background-color: #f8f7f4;
     border-radius: 5px;
-    box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
     cursor: default;
 }
 
@@ -337,7 +341,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header__login:hover .header__login-dropped {
-    
+
     display: block;
     position: absolute;
     top: 90%;
@@ -355,7 +359,7 @@ input[type="radio"].visually-hidden {
     padding: 20px 17px;
     background-color: #f8f7f4;
     border-radius: 5px;
-    box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
     cursor: default;
 }
 
@@ -385,28 +389,28 @@ input[type="radio"].visually-hidden {
 .header__login-btn {
     display: inline-block;
     background-color: #f06240;
-    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+    background-image: linear-gradient(#f26843 0%, #e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
     border-radius: 22px;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    text-shadow: 2px 0 2px rgba(172,16,0,0.76);
+    text-shadow: 2px 0 2px rgba(172, 16, 0, 0.76);
     padding: 10px 24px;
     cursor: pointer;
 }
 
 .header__login-btn:hover {
     background-color: #f58569;
-    background-image: linear-gradient(to top,#ec6f5e,#f58569);
+    background-image: linear-gradient(to top, #ec6f5e, #f58569);
 }
 
 .header__login-btn:active {
     background-color: #dc5539;
-    background-image: linear-gradient(to top,#e1613e,#d84732);
-    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
+    background-image: linear-gradient(to top, #e1613e, #d84732);
+    box-shadow: 0 2px 2px rgba(167, 48, 31, 1) inset;
 }
 
 .header__login-links {
@@ -547,7 +551,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-switcher:hover {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .slider-switcher:active {
@@ -567,15 +571,16 @@ input[type="radio"].visually-hidden {
 }
 
 .slider__input-switcher:checked + .slider-switcher {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .slider__input-switcher:checked + .slider-switcher + .slider__item {
-  display: block;
+    display: block;
 }
 
 .slider__item {
     display: none;
+    text-align: center;
 }
 
 .slider-picture {
@@ -597,28 +602,28 @@ input[type="radio"].visually-hidden {
 .slider-link {
     display: inline-block;
     background-color: #f06240;
-    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);
+    background-image: linear-gradient(#f26843 0%, #e74a35 100%);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, .64);
     border-radius: 32px;
     text-decoration: none;
     color: #fff;
     font-size: 32px;
     line-height: 44px;
     font-weight: 700;
-    text-shadow: 2px 0 2px rgba(172,16,0,0.76);
+    text-shadow: 2px 0 2px rgba(172, 16, 0, 0.76);
     padding: 10px 41px;
 }
 
 .slider-link:hover {
     background-color: #f58569;
-    background-image: linear-gradient(to top,#ec6f5e,#f58569);
-    box-shadow: 0 2px 2px rgba(172,16,0,1);
+    background-image: linear-gradient(to top, #ec6f5e, #f58569);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .slider-link:active {
     background-color: #dc5539;
-    background-image: linear-gradient(to top,#e1613e,#d84732);
-    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
+    background-image: linear-gradient(to top, #e1613e, #d84732);
+    box-shadow: 0 2px 2px rgba(167, 48, 31, 1) inset;
 }
 
 .main__container {
@@ -671,28 +676,28 @@ input[type="radio"].visually-hidden {
 .promo-btn {
     display: inline-block;
     background-color: #f06240;
-    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+    background-image: linear-gradient(#f26843 0%, #e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
     border-radius: 30px;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    text-shadow: 2px 0 2px rgba(172,16,0,0.76);
+    text-shadow: 2px 0 2px rgba(172, 16, 0, 0.76);
     padding: 11px 24px;
     float: right;
 }
 
 .promo-btn:hover {
     background-color: #f58569;
-    background-image: linear-gradient(to top,#ec6f5e,#f58569);
+    background-image: linear-gradient(to top, #ec6f5e, #f58569);
 }
 
 .promo-btn:active {
     background-color: #dc5539;
-    background-image: linear-gradient(to top,#e1613e,#d84732);
-    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
+    background-image: linear-gradient(to top, #e1613e, #d84732);
+    box-shadow: 0 2px 2px rgba(167, 48, 31, 1) inset;
 }
 
 .popular-items {
@@ -748,7 +753,7 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     vertical-align: middle;
     position: absolute;
-    top: 209px;
+    bottom: 71px;
     left: -2px;
     z-index: 7;
 }
@@ -778,7 +783,7 @@ input[type="radio"].visually-hidden {
     font-weight: 500;
     text-align: center;
     text-decoration: underline;
-    text-decoration-color: rgba(255,255,255,0.2);
+    text-decoration-color: rgba(255, 255, 255, 0.2);
     z-index: 7;
 }
 
@@ -789,45 +794,49 @@ input[type="radio"].visually-hidden {
 .popular__item:hover > .popular__item-hover {
     display: inline-block;
     position: absolute;
+    height: 125%;
     top: -6px;
     left: -4.9%;
     width: calc(4.9% + 100% + 4.9%);
     text-align: center;
-    padding-top: 339px;
-    padding-bottom: 22px;
     border-radius: 5px;
-    background-color: rgba(255,255,255,.3);
-    box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
+    background-color: rgba(255, 255, 255, .3);
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
     z-index: 3;
 }
 
 .popular__item-quick {
     display: inline-block;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
     border: none;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
-    text-shadow: 0 2px 5px rgba(160,32,11,.76);
+    text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
     padding: 10px 17px;
     border-radius: 22px;
     background-color: #f06240;
-    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+    background-image: linear-gradient(#f26843 0%, #e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
     cursor: pointer;
 }
 
 .popular__item-quick:hover {
     background-color: #f58569;
-    background-image: linear-gradient(to top,#ec6f5e,#f58569);
-    box-shadow: 0 2px 2px rgba(172,16,0,1);
+    background-image: linear-gradient(to top, #ec6f5e, #f58569);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .popular__item-quick:active {
     background-color: #dc5539;
-    background-image: linear-gradient(to top,#e1613e,#d84732);
-    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
+    background-image: linear-gradient(to top, #e1613e, #d84732);
+    box-shadow: 0 2px 2px rgba(167, 48, 31, 1) inset;
 }
 
 .advantages {
@@ -996,8 +1005,8 @@ input[type="radio"].visually-hidden {
 .distribution-btn {
     display: inline-block;
     background-color: #f06240;
-    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+    background-image: linear-gradient(#f26843 0%, #e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
     border-radius: 22px;
     border: none;
     text-decoration: none;
@@ -1005,7 +1014,7 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    text-shadow: 2px 0 2px rgba(172,16,0,0.76);
+    text-shadow: 2px 0 2px rgba(172, 16, 0, 0.76);
     padding: 10px 18px;
     margin-bottom: 5px;
     margin-left: 10px;
@@ -1013,13 +1022,13 @@ input[type="radio"].visually-hidden {
 
 .distribution-btn:hover {
     background-color: #f58569;
-    background-image: linear-gradient(to top,#ec6f5e,#f58569);
+    background-image: linear-gradient(to top, #ec6f5e, #f58569);
 }
 
 .distribution-btn:active {
     background-color: #dc5539;
-    background-image: linear-gradient(to top,#e1613e,#d84732);
-    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
+    background-image: linear-gradient(to top, #e1613e, #d84732);
+    box-shadow: 0 2px 2px rgba(167, 48, 31, 1) inset;
 }
 
 .contacts {
@@ -1071,27 +1080,27 @@ input[type="radio"].visually-hidden {
 .contacts-btn {
     display: inline-block;
     background-color: #f06240;
-    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+    background-image: linear-gradient(#f26843 0%, #e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
     border-radius: 22px;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    text-shadow: 2px 0 2px rgba(172,16,0,0.76);
+    text-shadow: 2px 0 2px rgba(172, 16, 0, 0.76);
     padding: 9px 22px 11px 28px;
 }
 
 .contacts-btn:hover {
     background-color: #f58569;
-    background-image: linear-gradient(to top,#ec6f5e,#f58569);
+    background-image: linear-gradient(to top, #ec6f5e, #f58569);
 }
 
 .contacts-btn:active {
     background-color: #dc5539;
-    background-image: linear-gradient(to top,#e1613e,#d84732);
-    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
+    background-image: linear-gradient(to top, #e1613e, #d84732);
+    box-shadow: 0 2px 2px rgba(167, 48, 31, 1) inset;
 }
 
 .footer {
@@ -1188,7 +1197,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     font-weight: 700;
     text-decoration: underline;
-    text-decoration-color: rgba(255,255,255,0.2);
+    text-decoration-color: rgba(255, 255, 255, 0.2);
     color: #fff;
     margin-bottom: 5px;
 }
@@ -1230,7 +1239,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     font-weight: normal;
     text-decoration: underline;
-    text-decoration-color: rgba(255,255,255,0.2);
+    text-decoration-color: rgba(255, 255, 255, 0.2);
     color: #fff;
     margin-bottom: 5px;
 }
@@ -1267,7 +1276,7 @@ input[type="radio"].visually-hidden {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 20px 20px rgba(0,0,0,.4);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .4);
     z-index: 50;
 }
 
@@ -1371,8 +1380,8 @@ input[type="radio"].visually-hidden {
 .feedback__form-btn {
     display: inline-block;
     background-color: #f06240;
-    background-image: linear-gradient(#f26843 0%,#e74a35 100%);
-    box-shadow: 0 2px 2px rgba(172,16,0,.64);
+    background-image: linear-gradient(#f26843 0%, #e74a35 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
     border-radius: 22px;
     border: none;
     text-decoration: none;
@@ -1380,20 +1389,20 @@ input[type="radio"].visually-hidden {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
-    text-shadow: 2px 0 2px rgba(172,16,0,0.76);
+    text-shadow: 2px 0 2px rgba(172, 16, 0, 0.76);
     padding: 10px 24px;
     align-self: flex-end;
 }
 
 .feedback__form-btn:hover {
     background-color: #f58569;
-    background-image: linear-gradient(to top,#ec6f5e,#f58569);
+    background-image: linear-gradient(to top, #ec6f5e, #f58569);
 }
 
 .feedback__form-btn:active {
     background-color: #dc5539;
-    background-image: linear-gradient(to top,#e1613e,#d84732);
-    box-shadow: 0 2px 2px rgba(167,48,31,1) inset;
+    background-image: linear-gradient(to top, #e1613e, #d84732);
+    box-shadow: 0 2px 2px rgba(167, 48, 31, 1) inset;
 }
 
 .breadcrumbs {
@@ -1583,15 +1592,49 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 218px;
     height: 36px;
+    position: relative;
+    padding: 16px;
+    background-color: rgba(225, 255, 255, 0.2);
+    border-radius: 18px;
 }
 
 .filter-form__price-range {
-    display: block;
-    width: calc(100% - 30px);
-    padding: 7px 0;
-    margin: 0 15px;
-    background: transparent;
-    cursor: pointer;
+    display: none;
+}
+
+.range-line {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.range-select {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+.range-select::after {
+    position: absolute;
+    content: '';
+    background-color: #ababab;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.range-select--right {
+    left: auto;
+    right: 50px;
 }
 
 .filter-form__fatcontent {
@@ -1739,6 +1782,7 @@ input[type="radio"].visually-hidden {
     color: #323232;
     background-color: #ffffff;
 }
+
 .filter-form__btn:active {
     color: #323232;
     border: none;
@@ -1788,7 +1832,7 @@ input[type="radio"].visually-hidden {
 
 .paginator__arrow--prev {
     transform: rotate(180deg);
-   margin-right: 22px;
+    margin-right: 22px;
 }
 
 .paginator__arrow--next {
